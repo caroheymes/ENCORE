@@ -1,0 +1,31 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6">
+      <h1 class="text-center"> Ecrire un mail </h1>
+          <%= simple_form_for @email do |f| %>
+          
+                        <div class="form-group">
+              <label for="object">Balance ton pitch </label>
+              <%= f.text_area(:object,  class: "form-control" ,rows: "1", placeholder: "En 2 mots")%>
+              <label for="body">Tu peux te faire plaisir </label>
+              <%= f.text_area(:body, class: "form-control", rows: "8", placeholder: "Sois créatif svp") %>
+              
+            </div>
+          
+            <div class="form-actions">
+              <%= f.button :submit, "Je balance du lourd", class: "btn btn-danger btn-lg" %>
+            </div>
+          <% end %>
+          
+        
+         
+          
+          
+          
+          
+          
+          
+    </div>
+  </div>
+</div>

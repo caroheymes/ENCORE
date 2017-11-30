@@ -1,0 +1,29 @@
+
+
+<div class="container">
+  <h1 class="uk-heading-divider">Tous les mails en boîte</h1>
+  <div class="row"><%= link_to 'New Email', new_email_path, class:"btn btn-secondary" %>
+    <div class="col-xs-3 col-md-3">
+      <p>Les mails reçus</p>
+       <% @emails.each do |email| %>
+            <div class="email-object uk-heading-bullet" id="<%=email.id%>">
+              <%= link_to email.object, email, remote: true %></div>
+      <%end%> 
+      
+    </div>
+    <div class="col-xs-9 col-md-9 right uk-heading-line uk-text-center uk-animation-scale-up">
+      <div class="row">
+          <div id="magic">le texte du mail cliqué doit apparaître ici </div>
+          
+            <!--le render fait tout pêter ! donc je le désactive-->
+           <!--< %= render 'truc', email: @email %>-->
+        
+          </div>
+        
+      </div>
+      
+      
+
+        
+    </div>
+</div>
