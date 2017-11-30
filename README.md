@@ -1,1 +1,6 @@
-Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.
+En ligne sur 
+
+https://reprise-email-viewer.herokuapp.com/
+
+
+Pb avec le render des emails qui fait pêter le code de la vue index. Il est désactivé 
